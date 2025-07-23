@@ -1,0 +1,2 @@
+ignores: ["eslint*", "@typescript-eslint/*", "esbuild", "@tsconfig/recommended", "aws-lambda"]
+ignore-patterns: ["cdk.out", "coverage", "build", "dist", "node_modules"]

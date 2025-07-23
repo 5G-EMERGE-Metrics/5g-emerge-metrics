@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Base",
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "lib": ["esnext"],
+    "esModuleInterop": false, // we want to use native ESM
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false, // FIXME: change to true when we have time to fix the code
+    "skipLibCheck": true,    
+    "allowJs": true,
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noEmitOnError": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": false,
+    "allowImportingTsExtensions": true,
+  },
+  "include": [
+    "**/*.ts", 
+    "**/*.mjs", 
+    "commitlint.config.ts",
+    "lint-staged.config.ts", 
+    "syncpack.config.ts", 
+    "vitest.config.ts"
+  ],
+  "exclude": [
+    "cdk.out", 
+    "node_modules", 
+    "dist", 
+    "**/*.test.ts"
+  ]
+}
+
